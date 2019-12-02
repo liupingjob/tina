@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "text": "招聘管理",
+      "icon": "&#xe605;",
+      "subset": [
+        {
+          "text": "招聘信息导入",
+          "icon": "&#xe60b;",
+          "href": "demo/dataImport.html"
+        },{
+          "text": "招聘信息查询",
+          "icon": "&#xe64c;",
+          "href": "demo/dataList.html"
+        },{
+          "text": "招聘报表统计",
+          "icon": "&#xe60f;",
+          "href": "demo/dataTable.html"
+        }
+      ]
+    },{
+      "text": "考勤管理",
+      "icon": "&#xe628;",
+      "href": "",
+      "subset": [
+        {
+          "text": "人员信息维护",
+          "icon": "&#xe60b;",
+          "href": "kq/userDataImport.html"
+        },{
+          "text": "出勤排班信息",
+          "icon": "&#xe64c;",
+          "href": "kq/workDateDataImport.html"
+        },{
+          "text": "人员请假信息",
+          "icon": "&#xe60f;",
+          "href": "kq/leaveDataImport.html"
+        },{
+          "text": "外出考勤信息",
+          "icon": "&#xe60f;",
+          "href": "kq/dingDingDataImport.html"
+        },{
+          "text": "考勤打卡信息",
+          "icon": "&#xe60f;",
+          "href": "kq/workTimeDataImport.html"
+        },{
+          "text": "考勤汇总信息",
+          "icon": "&#xe60f;",
+          "href": "kq/countDateDataImport.html"
+        }
+      ]
+    },{
+      "text": "报表统计",
+      "icon": "&#xe60b;",
+       "href": "demo/dataTable.html"
+    }
+  ]
+}

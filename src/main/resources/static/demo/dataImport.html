@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>招聘信息导入</title>
+    <link rel="stylesheet" href="../frame/layui/css/layui.css">
+    <link rel="stylesheet" href="../frame/static/css/style.css">
+    <link rel="icon" href="../frame/static/image/code.png">
+</head>
+<body class="body">
+
+
+<blockquote class="layui-elem-quote layui-text">
+    &nbsp;&nbsp;注： 招聘信息导入方式有两种&nbsp;&nbsp;&nbsp;&nbsp;  1、单行填写手动导入&nbsp;&nbsp;&nbsp;  2、Excel文件多行批量导入.  &nbsp;&nbsp;&nbsp; <a href="/template/招聘人员信息模板.xlsx" >Excel导入模块文件下载</a>
+</blockquote>
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>方式一🚲🚓🚜：手动填写表单单行录入✒️</legend>
+</fieldset>
+
+<form class="layui-form" id="dataForm" action="/addUserInfo" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label">姓名❤️：</label>
+        <div class="layui-input-inline">
+            <input type="text" name="username" lay-verify="title" autocomplete="on" placeholder="请输入姓名(必填)🗣" class="layui-input">
+        </div>
+       
+        <label class="layui-form-label">性别👧🏻：</label>
+        <div class="layui-input-inline">
+            <select name="sex">
+                <option value="男" selected="">男人👦🏻</option>
+                <option value="女">女的👧🏻</option>
+            </select>
+        </div>
+         <label class="layui-form-label">电话☎️：</label>
+        <div class="layui-input-inline">
+            <input type="text" name="phone" autocomplete="on" placeholder="请输入电话(选填)📞️" class="layui-input">
+        </div>
+          <label class="layui-form-label">邮箱📮：</label>
+        <div class="layui-input-inline">
+            <input type="text" name="mail" autocomplete="on" placeholder="📬请输入电子邮箱(选填)📨" class="layui-input">
+        </div>
+        </div>
+        <div class="layui-form-item">
+        <label class="layui-form-label">面试职位：</label>
+        <div class="layui-input-inline">
+            <select name="position">
+                <option value="销售顾问" selected="">销售顾问</option>
+                <option value="销售经理">销售经理</option>
+                <option value="行政专员">行政专员</option>
+                <option value="培训讲师">培训讲师</option>
+                <option value="财务总监">财务总监</option>
+                <option value="运营总监">运营总监</option>
+                <option value="副总/总监">副总/总监</option>
+            </select>
+        </div>
+        
+        <label class="layui-form-label">来源渠道：</label>
+        <div class="layui-input-inline">
+            <select name="from">
+                <option value="智联招聘">智联招聘</option>
+                <option value="BOSS直骋">BOSS直骋</option>
+                <option value="前程无忧">前程无忧</option>
+                <option value="校园网">校园网</option>
+                <option value="公司内推">公司内推</option>
+                <option value="其它">其它</option>
+            </select>
+        </div>
+         <label class="layui-form-label">邀约日期：</label>
+            <div class="layui-input-inline">
+                <input type="text" name="yaoyueDate" id="date"   placeholder="🗓电话邀约日期📅" autocomplete="off" class="layui-input">
+            </div>
+             <label class="layui-form-label">邀约成功：</label>
+        <div class="layui-input-inline">
+            <select name="isPass0">
+                <option value="邀约成功" selected="">邀约成功</option>
+                <option value="邀约不成功">邀约不成功</option>
+            </select>
+        </div>
+        
+        
+              </div>
+        <div class="layui-form-item">
+             <label class="layui-form-label">面试日期：</label>
+            <div class="layui-input-inline">
+                <input type="text" name="testDate" id="date3"   placeholder="🗓实际面试日期📆" autocomplete="off" class="layui-input">
+            </div>
+            
+            
+              <label class="layui-form-label">初试通过：</label>
+        <div class="layui-input-inline">
+            <select name="isPass1">
+                <option value="初试通过" selected="">初试通过</option>
+                <option value="初试不通过">初试pass</option>
+            </select>
+        </div>
+      
+        <label class="layui-form-label">初试评价：</label>
+        <div class="layui-input-inline">
+            <select name="reason">
+                <option value="初试未通过" selected="">不通过则选</option>
+                <option value="沟通表达不行">沟通表达不行</option>
+                <option value="面试态度不行">面试态度不行</option>
+                <option value="专业能力不行">专业能力不行</option>
+                <option value="其它原因">其它原因</option>
+            </select>
+        </div>
+          <label class="layui-form-label">复试部门：</label>
+        <div class="layui-input-inline">
+            <select name="department">
+             <option value="" selected="">选择复试经理</option>
+                <option value="一部-林宝如" >一部-林宝如</option>
+                <option value="二部-黄小福">二部-黄小福</option>
+                <option value="三部-帅哥刘">三部-帅哥刘</option>
+                <option value="四部-平哥帅">四部-平哥帅</option>
+                <option value="五部-李昱璇">五部-李昱璇</option>
+            </select>
+        </div>
+         </div>
+            <div class="layui-form-item">
+        <label class="layui-form-label">复试结果：</label>
+        <div class="layui-input-inline">
+            <select name="isPass2">
+                <option value="复试不通过" selected="">复试不通过</option>
+                <option value="复试通过" >复试通过</option>
+            </select>
+        </div>
+         
+        <label class="layui-form-label">Offer日期：</label>
+            <div class="layui-input-inline">
+                <input type="text" name="offerDate" id="date2"   placeholder="📆Offer日期📆" autocomplete="off" class="layui-input">
+            </div>
+          
+            <label class="layui-form-label">备注信息：</label>
+        <div class="layui-input-inline">
+            <input type="text" name="remark" autocomplete="on" style="width: 500px;" placeholder="📃📑请输入备注信息（选填）📖📝" class="layui-input">
+        </div>
+    </div>
+    
+     <p>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" id="subForm" type="button" >立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>方式二‍👩‍👧‍🚡✈️🚀：Excel文件批量导入 💄数据模板请到页面头部下载 💋</legend>
+</fieldset>
+<form class="layui-form layui-form-pane" action="">
+
+ 
+<div class="layui-upload" align="center">
+  <button type="button" class="layui-btn layui-btn-normal" id="test8">选择文件</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="layui-btn" id="test9">开始上传</button>
+</div>
+<div id="dataDiv" style="display: none;">
+  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>导入数据列表（Excel文件数据中如果序号列为空的行则不会导入）另：如果发现导入错误数据请修改Excel后重新上传</legend>
+</fieldset>
+
+<table class="layui-table" id="dataTable">
+    <colgroup>
+        <col>
+    </colgroup>
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>电话</th>
+        <th>邮箱</th>
+        <th>面试职位</th>
+        <th>来源渠道</th>
+        <th>邀约日期</th>
+        <th>邀约成功</th>
+        <th>面试日期</th>
+        <th>初试通过</th>
+        <th>复试部门</th>
+        <th>复试结果</th>
+        <th>Offer日期</th>
+        <th>备注</th>
+    </tr>
+    </thead>
+    <tbody id="dataBody">
+     
+    </tbody>
+</table>
+ <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" id="saveData" type="button" >确认导入并保存</button>
+            <button class="layui-btn" id="noSave" type="button" >取消保存</button>
+        </div>
+    </div>
+    </div>
+</form>
+
+<script src="../frame/layui/layui.all.js" charset="utf-8"></script>
+<script>
+    layui.use(['form', 'laydate','upload'], function(){
+        var form = layui.form
+                ,layer = layui.layer
+                ,upload = layui.upload
+                ,laydate = layui.laydate
+                ,$ = layui.jquery;
+
+        //日期
+       //日期时间选择器
+  laydate.render({
+    elem: '#date'
+    ,type: 'datetime'
+  });
+        laydate.render({
+            elem: '#date1'
+            ,type: 'datetime'
+        });
+        laydate.render({
+            elem: '#date2'
+            ,type: 'datetime'
+        });
+        laydate.render({
+            elem: '#date3'
+            ,type: 'datetime'
+        });
+      //选完文件后不自动上传
+        upload.render({
+          elem: '#test8'
+          ,url: '/uploadUserInfoFile/'
+          ,auto: false
+          ,exts: 'xlsx|xls' 
+          ,accept: 'file' //普通文件
+          ,bindAction: '#test9'
+          ,done: function(res, index, upload){
+        	  $("#dataDiv").show();
+        	  console.log(res);
+        	  $("#dataBody").html("");
+        	  for(var i=0;i<res.length;i++){
+        		  var tr="<tr id='tr"+i+"'></tr>";
+        		  $("#dataBody").append(tr);
+        		  $("#tr"+i).append("<td>"+res[i].id+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].username+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].sex+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].mail+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].phone+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].position+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].from+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].yaoyueDate+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].isPass0+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].testDate+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].isPass1+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].reason+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].department+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].isPass2+"</td>");
+        		  $("#tr"+i).append("<td>"+res[i].offerDate+"</td>");
+        	  }
+           }
+          ,error: function(res,index, upload){
+        	layer.msg("上传失败 请稍后重试!!!");
+           }
+        });
+        
+
+ 
+        $("[value=删除]").click(function(){
+        	layer.msg("a");
+        });
+         
+        //监听提交
+        $("#noSave").click(function(){ 
+        	layer.msg("取消后需重新上传才会有数据的！！！");
+        	$("#dataBody").html("");
+        	$("#dataDiv").hide();
+        });
+      //监听提交
+        $("#saveData").click(function(){ 
+        	layer.confirm('确认要保存并更新到数据库吗？不可撤回的哦？亲', {
+        		  btn: ['确认保存', '算了再看下', '重新导入吧'] //可以无限个按钮
+        		  ,btn3: function(index, layero){
+        		    layer.msg("这个按钮是没用的");
+        		  }
+        		}, function(index, layero){
+        			$.ajax({
+                		url:'/saveUploadFileData',
+                		success:function(msg){
+                			layer.msg(msg);
+                			$("#dataBody").html("");
+                			$("#dataDiv").hide();
+                		}
+                	});
+        		}, function(index){
+        			layer.msg("这个按钮也是没用的");
+        	});
+        });
+        //监听提交
+       $("#subForm").click(function(){ 
+         	var username=$("[name=username]").val();
+         	if(username==''){
+         		layer.msg("姓名是必填项！");
+         		$("[name=username]").focus();
+         		return;
+         	}
+         	var yaoyueDate=$("[name=yaoyueDate]").val();
+         	if(yaoyueDate==''){
+         		layer.msg("电话☎️邀约时间必填！");
+         	    $("[name=yaoyueDate]").trigger("click");
+         		return;
+         	}
+            $.ajax({
+            	url:"/addUserInfo",
+            	type:"post",
+            	data:$("#dataForm").serialize(),
+            	success:function(msg){
+            		layer.alert(msg+" 信息新增成功！请到信息列表中查询最新数据！");
+            	}
+            });
+        });
+
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d37f5dcb-9849-4686-9d87-bcfe987f16ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/.jsdtscope" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.validation.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1-29.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5月 人员考勤1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5月份考勤-原始打卡.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/all.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dingDingInfo.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leaveInfo.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/SpringBootApllication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/controller/hr/DataJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/controller/hr/DepInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/controller/hr/HrController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/controller/hr/PositionInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/controller/hr/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/kq/Contants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/kq/CountDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/kq/DingDingInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/kq/LeaveInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/kq/OutWorkInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/kq/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/kq/WorkDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/kq/WorkTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/AddressByIpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/AliyunOSSUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/AntiSqlInjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/CookieTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/ExcelUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/MailUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/NumberUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/ReflexObjectUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/SmsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/StreamUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/czsm/util/VerifyCodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/_blank.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/add-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/auxiliar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/btn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/btn1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/children.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/data-table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/dataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/dataImportKq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/dataList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/dataTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/folding-panel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/login2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/progress-bar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/tab-card.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/tips.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/tree-table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/demo/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/echarts/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/css/modules/laydate/default/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/static/image/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/static/image/code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/static/image/v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/static/image/wx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/static/image/zfb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/static/js/vip_comm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/static/js/vip_nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/static/js/vip_tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/frame/static/js/vip_table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/json/data_table.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/json/nav_main.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/json/nav_top_left.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/kq/countDateDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/kq/dingDingDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/kq/leaveDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/kq/userDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/kq/workDateDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/kq/workTimeDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/template/人员信息模板.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/template/招聘人员信息模板.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/template/考勤排班模板.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina.war.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/SpringBootApllication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/controller/hr/DataJson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/controller/hr/DepInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/controller/hr/HrController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/controller/hr/PositionInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/controller/hr/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/kq/Contants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/kq/CountDate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/kq/DingDingInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/kq/KqController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/kq/LeaveInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/kq/OutWorkInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/kq/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/kq/WorkDate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/kq/WorkTime.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/AddressByIpUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/AliyunOSSUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/AntiSqlInjection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/Constants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/CookieTool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/DateUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/ExcelUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/JsonUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/MD5Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/MailUtil$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/MailUtil$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/MailUtil$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/MailUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/NumberUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/ReflexObjectUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/SmsUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/StreamUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/StringUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/com/czsm/util/VerifyCodeUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/_blank.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/add-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/auxiliar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/btn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/btn1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/children.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/data-table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/dataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/dataImportKq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/dataList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/dataTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/folding-panel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/login2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/progress-bar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/tab-card.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/tips.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/tree-table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/demo/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/echarts/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/css/modules/laydate/default/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/static/image/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/static/image/code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/static/image/v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/static/image/wx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/static/image/zfb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/static/js/vip_comm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/static/js/vip_nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/static/js/vip_tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/frame/static/js/vip_table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/index1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/js/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/json/data_table.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/json/nav_main.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/json/nav_top_left.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/kq/countDateDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/kq/dingDingDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/kq/leaveDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/kq/userDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/kq/workDateDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/kq/workTimeDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/login2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/template/人员信息模板.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/template/招聘人员信息模板.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/classes/static/template/考勤排班模板.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/activation-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/aliyun-java-sdk-dysmsapi-1.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/aliyun-sdk-oss-2.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/attoparser-2.0.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/classmate-1.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/commons-beanutils-1.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/commons-codec-1.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/commons-collections-3.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/commons-io-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/commons-lang-2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/dom4j-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/ehcache-2.10.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/ezmorph-1.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/hibernate-validator-6.0.9.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/httpclient-4.5.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/httpcore-4.4.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/jackson-core-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/jackson-databind-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/jackson-datatype-jdk8-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/jackson-datatype-jsr310-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/jackson-module-parameter-names-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/javax.annotation-api-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/jdom-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/jul-to-slf4j-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/log4j-api-2.10.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/log4j-to-slf4j-2.10.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/logback-classic-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/logback-core-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/mail-1.4.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/poi-3.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/poi-ooxml-3.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/poi-ooxml-schemas-3.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/snakeyaml-1.19.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-aop-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-beans-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-boot-2.0.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-boot-autoconfigure-2.0.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-boot-starter-2.0.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-boot-starter-json-2.0.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-boot-starter-logging-2.0.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-boot-starter-thymeleaf-2.0.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-boot-starter-tomcat-2.0.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-boot-starter-web-2.0.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-context-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-core-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-expression-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-jcl-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-web-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/spring-webmvc-5.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/stax-api-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/thymeleaf-3.0.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/thymeleaf-extras-java8time-3.0.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/thymeleaf-spring5-3.0.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/tomcat-embed-core-8.5.29.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/tomcat-embed-el-8.5.29.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/tomcat-embed-websocket-8.5.29.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/unbescape-1.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/validation-api-2.0.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/xml-apis-1.4.01.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/lib/xmlbeans-2.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Tina/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/SpringBootApllication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/controller/hr/DataJson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/controller/hr/DepInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/controller/hr/HrController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/controller/hr/PositionInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/controller/hr/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/kq/Contants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/kq/CountDate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/kq/DingDingInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/kq/KqController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/kq/LeaveInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/kq/OutWorkInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/kq/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/kq/WorkDate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/kq/WorkTime.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/AddressByIpUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/AliyunOSSUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/AntiSqlInjection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/Constants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/CookieTool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/DateUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/ExcelUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/JsonUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/MD5Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/MailUtil$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/MailUtil$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/MailUtil$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/MailUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/NumberUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/ReflexObjectUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/SmsUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/StreamUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/StringUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/czsm/util/VerifyCodeUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/_blank.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/add-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/auxiliar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/btn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/btn1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/children.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/data-table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/dataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/dataImportKq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/dataList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/dataTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/folding-panel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/login2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/progress-bar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/tab-card.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/tips.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/tree-table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/demo/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/echarts/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/css/modules/laydate/default/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/static/image/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/static/image/code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/static/image/v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/static/image/wx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/static/image/zfb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/static/js/vip_comm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/static/js/vip_nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/static/js/vip_tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/frame/static/js/vip_table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/index1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/json/data_table.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/json/nav_main.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/json/nav_top_left.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/kq/countDateDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/kq/dingDingDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/kq/leaveDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/kq/userDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/kq/workDateDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/kq/workTimeDataImport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/login2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/template/人员信息模板.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/template/招聘人员信息模板.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/template/考勤排班模板.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userInfo.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workDateInfo.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workTimeInfo.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/人员信息模板.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/打卡机考勤导出.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/新建 Microsoft Excel 工作表.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/统计信息" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/考勤排班模板.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/考勤汇总统计报表信息" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/考勤记录.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/请假(1).xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/请假数据-5月份-考勤1.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/请假数据-6月份-考勤 (2)(1).xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/钉钉签到报表(深圳市亚东国际商业有限公司)1-29.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/钉钉签到报表(深圳市亚东国际商业有限公司)1-31.xls" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\BaiduNetdiskDownload\hr\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UHOvT1zKlA5YcCEFLsfkZTMqJg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootApllication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.czsm.SpringBootApllication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d37f5dcb-9849-4686-9d87-bcfe987f16ce" name="Default Changelist" comment="" />
+      <created>1575010284312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575010284312</updated>
+      <workItem from="1575010285664" duration="7915000" />
+      <workItem from="1575247842719" duration="703000" />
+      <workItem from="1575254885197" duration="2791000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="161" key="FileChooserDialogImpl" timestamp="1575257834512">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="161" key="FileChooserDialogImpl/0.0.1536.834/-1920.0.1536.834@0.0.1536.834" timestamp="1575257834512" />
+    <state x="593" y="331" width="373" height="171" key="Github.CreateGistDialog" timestamp="1575256871615">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="593" y="331" width="373" height="171" key="Github.CreateGistDialog/0.0.1536.834/-1920.0.1536.834@0.0.1536.834" timestamp="1575256871615" />
+    <state x="643" y="313" width="273" height="208" key="Github.ShareDialog" timestamp="1575258025122">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="643" y="313" width="273" height="208" key="Github.ShareDialog/0.0.1536.834/-1920.0.1536.834@0.0.1536.834" timestamp="1575258025122" />
+    <state x="427" y="125" key="Github.UntrackedFilesDialog" timestamp="1575258035026">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="427" y="125" key="Github.UntrackedFilesDialog/0.0.1536.834/-1920.0.1536.834@0.0.1536.834" timestamp="1575258035026" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1575258115731">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834/-1920.0.1536.834@0.0.1536.834" timestamp="1575258115731" />
+  </component>
+</project>

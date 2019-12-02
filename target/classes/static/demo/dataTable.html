@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>报表数据</title>
+    <link rel="stylesheet" href="../frame/layui/css/layui.css">
+    <link rel="stylesheet" href="../frame/static/css/style.css">
+    <link rel="icon" href="../frame/static/image/code.png">
+</head>
+<body class="body">
+    <div class="layui-form-item">
+        <label class="layui-form-label">统计时间：</label>
+            <div class="layui-input-inline">
+                <input type="text" name="date" id="date"   placeholder="选择统计时间段" autocomplete="off" class="layui-input">
+            </div>
+           <button class="layui-btn layui-btn-primary layui-btn-radius" id="bmBtn">按部门统计</button>
+ 		   <button class="layui-btn layui-btn-primary layui-btn-radius" id="zwBtn">按职位统计</button>
+ 		   <button class="layui-btn layui-btn-primary layui-btn-radius" id="rqBtn">按日期查看</button>
+    </div>
+     
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend></legend>
+</fieldset>
+ <table class="layui-hide" id="dataTableBm"></table>
+ <table class="layui-hide" id="dataTableZw"></table>
+ <table class="layui-hide" id="dataTableRq"></table>
+<script src="../frame/layui/layui.js" charset="utf-8"></script>
+ <script type="text/html" id="toolbarDemo">
+  <div class="layui-btn-container">
+     <button class="layui-btn layui-btn-warm">按部门统计数据</button>
+     <button class="layui-btn layui-btn-sm" > 提示：右边分别是 1、编辑列模式按钮  2、导出按钮  3、打印按钮</button> 
+  </div>
+</script>
+ <script type="text/html" id="toolbarDemo1">
+  <div class="layui-btn-container">
+     <button class="layui-btn layui-btn-normal">按职位统计数据</button>
+     <button class="layui-btn layui-btn-sm" >提示：右边分别是 1、编辑列模式按钮  2、导出按钮  3、打印按钮</button> 
+  </div>
+</script>
+<script type="text/html" id="toolbarDemo2">
+  <div class="layui-btn-container">
+     <button class="layui-btn layui-btn-normal">按邀约日期查看数据</button>
+     <button class="layui-btn layui-btn-sm" >提示：右边分别是 1、编辑列模式按钮  2、导出按钮  3、打印按钮</button> 
+  </div>
+</script>
+<script>
+    layui.use(['form', 'laydate','table'], function(){
+        var form = layui.form
+                ,layer = layui.layer
+                ,laydate = layui.laydate
+                ,$ = layui.jquery
+                ,table = layui.table;
+
+        //日期
+        laydate.render({
+            elem: '#date'
+           ,range: true
+        });
+         
+        
+        //部门统计
+       $("#bmBtn").click(function(){ 
+    	   var time=$("#date").val();
+    	   if(time==''){
+    		   layer.msg("请先选择时间段才能统计！");
+    		   return;
+    	   }
+    	   table.render({
+    		    elem: '#dataTableBm'
+    		    ,url:'/countDataBm?time='+time
+    		    ,toolbar: '#toolbarDemo'
+    		    ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+    		    ,cols: [[
+    		      {field:'depName',  title: '部门', sort: true}
+    		      ,{field:'position', title: '职位统计'}
+    		      ,{field:'yaoyueAll',  title: '邀约总数', sort: true}
+    		      ,{field:'yaoyueSucc', title: '邀约成功数', sort: true}
+    		      ,{field:'yaoyueLv', title: '邀约成功率', sort: true} //minWidth：局部定义当前单元格的最小宽度，layui 2.2.1 新增
+    		      ,{field:'test', title: '初试总人数', sort: true}
+    		      ,{field:'testSucc', title: '初试成功人数', sort: true}
+    		      ,{field:'testLv', title: '初试成功率', sort: true}
+    		      ,{field:'test1', title: '复试总人数', sort: true}
+    		      ,{field:'test1Succ', title: '复试成功数', sort: true}
+    		      ,{field:'testSucc', title: '复试成功率', sort: true}
+    		      ,{field:'offer', title: 'Offer数', sort: true}
+    		      ,{field:'usernames', title: '名称集'}
+    		    ]]
+    		  });
+    	   
+        });
+       //部门统计
+       $("#zwBtn").click(function(){ 
+    	   var time=$("#date").val();
+    	   if(time==''){
+    		   layer.msg("请先选择时间段才能统计！");
+    		   return;
+    	   }
+    	   table.render({
+    		    elem: '#dataTableZw'
+    		    ,url:'/countDataZw?time='+time
+    		    ,toolbar: '#toolbarDemo1'
+    		    ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+    		    ,cols: [[
+    		      {field:'position',  title: '职位', sort: true}
+    		      ,{field:'yaoyueAll',  title: '邀约总数', sort: true}
+    		      ,{field:'yaoyueSucc', title: '邀约成功数', sort: true}
+    		      ,{field:'yaoyueLv', title: '邀约成功率', sort: true} //minWidth：局部定义当前单元格的最小宽度，layui 2.2.1 新增
+    		      ,{field:'test', title: '初试总人数', sort: true}
+    		      ,{field:'testSucc', title: '初试成功人数', sort: true}
+    		      ,{field:'testLv', title: '初试成功率', sort: true}
+    		      ,{field:'test1', title: '复试总人数', sort: true}
+    		      ,{field:'test1Succ', title: '复试成功数', sort: true}
+    		      ,{field:'testSucc', title: '复试成功率', sort: true}
+    		      ,{field:'offer', title: 'Offer数', sort: true}
+    		      ,{field:'usernames', title: '名称集'}
+    		    ]]
+    		  });
+    	   
+        });
+       
+       //监听提交
+       $("#rqBtn").click(function(){ 
+    	   var time=$("#date").val();
+    	   if(time==''){
+    		   layer.msg("请先选择时间段才能统计！");
+    		   return;
+    	   }
+    	 //第一个实例
+           table.render({
+             elem: '#dataTableRq'
+             ,height: 560
+             ,url: '/searchList1?yaoyueDate='+time //数据接口
+             ,toolbar: '#toolbarDemo2'
+             ,cols: [[ //表头
+                 ,{field: 'yaoyueDate', title: '邀约时间', sort: true}
+                 ,{field: 'username', title: '用户名'}
+                 ,{field: 'sex', title: '性别'}
+                 ,{field: 'phone', title: '电话️'} 
+                 ,{field: 'mail', title: '邮箱️'} 
+                 ,{field: 'position', title: '面试职位', sort: true}
+                 ,{field: 'from', title: '来源渠道', sort: true}
+                 ,{field: 'isPass0', title: '邀约结果', sort: true}
+                 ,{field: 'testDate', title: '面试日期', sort: true}
+                 ,{field: 'isPass1', title: '初试结果', sort: true}
+                 ,{field: 'reason', title: '初试评价', sort: true}
+                 ,{field: 'department', title: '部门', sort: true}
+                 ,{field: 'isPass2', title: '复试结果', sort: true}
+                 ,{field: 'offerDate', title: 'Offer日期', sort: true}
+                 ,{field: 'remark', title: '备注'}
+             ]]
+             ,parseData: function(res){ //res 即为原始返回的数据
+           	    return {
+           	        "code": res.code, //解析接口状态
+           	        "msg": res.msg, //解析提示文本
+           	        "count": res.count, //解析数据长度
+           	        "data": res.data //解析数据列表
+           	      };
+              }
+           });
+       });
+    });
+</script>
+</body>
+</html>

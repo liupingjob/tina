@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>信息列表查询</title>
+    <link rel="stylesheet" href="../frame/layui/css/layui.css">
+    <link rel="stylesheet" href="../frame/static/css/style.css">
+    <link rel="icon" href="../frame/static/image/code.png">
+</head>
+<body class="body">
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>💫筛选条件🍳</legend>
+</fieldset>
+
+<form class="layui-form" id="dataForm" action="/addUserInfo" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label">姓名❤️：</label>
+        <div class="layui-input-inline">
+            <input type="text" name="username" lay-verify="title" autocomplete="on" placeholder="请输入姓名(必填)🗣" class="layui-input">
+        </div>
+       
+        <label class="layui-form-label">性别👧🏻：</label>
+        <div class="layui-input-inline">
+            <select name="sex">
+                <option value="" selected="">选择性别</option>
+                <option value="男">男人👦🏻</option>
+                <option value="女">女的👧🏻</option>
+            </select>
+        </div>
+         <label class="layui-form-label">电话☎️：</label>
+        <div class="layui-input-inline">
+            <input type="text" name="phone" autocomplete="on" placeholder="请输入电话(选填)📢️" class="layui-input">
+        </div>
+        <label class="layui-form-label">邮箱📮：</label>
+        <div class="layui-input-inline">
+            <input type="text" name="mail" autocomplete="on" placeholder="请输入电子邮箱(选填)📨" class="layui-input">
+        </div>
+         </div>
+        <div class="layui-form-item">
+        <label class="layui-form-label">面试职位：</label>
+        <div class="layui-input-inline">
+            <select name="position">
+                <option value="" selected="">选择职位</option>
+                <option value="销售顾问" >销售顾问</option>
+                <option value="销售经理">销售经理</option>
+                <option value="职能专员">职能专员</option>
+                <option value="副总/总监">副总/总监</option>
+            </select>
+        </div>
+       
+        <label class="layui-form-label">来源渠道：</label>
+        <div class="layui-input-inline">
+            <select name="from">
+                <option value="" selected="">选择渠道</option>
+                <option value="智联招聘">智联招聘</option>
+                <option value="BOSS直骋">BOSS直骋</option>
+                <option value="前程无忧">前程无忧</option>
+                <option value="校园网">校园网</option>
+                <option value="内推">公司内推</option>
+                <option value="其它">其它</option>
+            </select>
+        </div>
+         <label class="layui-form-label">邀约日期：</label>
+            <div class="layui-input-inline">
+                <input type="text" name="yaoyueDate" id="date"   placeholder="🗓电话邀约日期🕐" autocomplete="off" class="layui-input">
+            </div>
+             <label class="layui-form-label">邀约成功：</label>
+        <div class="layui-input-inline">
+            <select name="isPass0">
+                <option value="" selected="">邀约是否成功？</option>
+                <option value="邀约成功" >邀约成功</option>
+                <option value="邀约不成功">邀约不成功</option>
+            </select>
+        </div>
+        
+        </div>
+        <div class="layui-form-item">
+             <label class="layui-form-label">面试日期：</label>
+            <div class="layui-input-inline">
+                <input type="text" name="testDate" id="date3"   placeholder="🗓实际面试日期🕰" autocomplete="off" class="layui-input">
+            </div>
+            
+            
+              
+              <label class="layui-form-label">初试通过：</label>
+        <div class="layui-input-inline">
+            <select name="isPass1">
+                <option value="" selected="">初试是否通过？</option>
+                <option value="初试通过" >初试通过</option>
+                <option value="初试不通过">初试pass</option>
+            </select>
+        </div>
+      
+        <label class="layui-form-label">初试评价：</label>
+        <div class="layui-input-inline">
+            <select name="reason">
+                <option value="" selected="">请选择评价</option>
+                <option value="初试未通过">初试未通过</option>
+                <option value="沟通表达不行">沟通表达不行</option>
+                <option value="面试态度不行">面试态度不行</option>
+                <option value="专业能力不行">专业能力不行</option>
+                <option value="其它原因">其它原因</option>
+            </select>
+        </div>
+          <label class="layui-form-label">复试部门：</label>
+        <div class="layui-input-inline">
+            <select name="department">
+             <option value="" selected="">选择复试经理</option>
+                <option value="一部-林宝如" >一部-林宝如</option>
+                <option value="二部-黄小福">二部-黄小福</option>
+                <option value="三部-帅哥刘">三部-帅哥刘</option>
+                <option value="四部-平哥帅">四部-平哥帅</option>
+                <option value="五部-李昱璇">五部-李昱璇</option>
+            </select>
+        </div>
+        </div>
+            <div class="layui-form-item">
+        <label class="layui-form-label">复试结果：</label>
+        <div class="layui-input-inline">
+            <select name="isPass2">
+                <option value="" selected="">复试是否通过？</option>
+                <option value="复试不通过" >复试不通过</option>
+                <option value="复试通过" >复试通过</option>
+            </select>
+        </div>
+          
+        <label class="layui-form-label">Offer日期：</label>
+            <div class="layui-input-inline">
+                <input type="text" name="offerDate" id="date2"   placeholder="🔰Offer日期📆" autocomplete="off" class="layui-input">
+            </div>
+          
+            <label class="layui-form-label">备注信息：</label>
+        <div class="layui-input-inline">
+            <input type="text" name="remark" autocomplete="on" style="width: 500px;" placeholder="🏄🏻🎪请输入备注信息（选填）1️⃣2️⃣3️⃣4️⃣5️⃣" class="layui-input">
+        </div>
+    </div>
+    
+     <p>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" id="subForm" type="button" >立即查询🎲</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置条件🎯</button>
+        </div>
+    </div>
+</form>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>🍭查询数据列表</legend>
+</fieldset>
+ <table class="layui-hide" id="dataTable" lay-filter="dataTable"></table>
+
+ <script type="text/html" id="toolbarDemo">
+  <div class="layui-btn-container">
+    <button class="layui-btn layui-btn-danger layui-btn-sm" lay-event="getCheckData">🍟删除选中行数据</button>  <button class="layui-btn layui-btn-sm" >右边分别是编辑列 导出 打印 按钮</button> 
+  </div>
+</script>
+ 
+<script type="text/html" id="barDemo">
+  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">🈚️</a>
+</script>
+
+<script src="../frame/layui/layui.js" charset="utf-8"></script>
+<script>
+layui.use(['form', 'laydate','table'], function(){
+    var form = layui.form
+            ,layer = layui.layer
+            ,laydate = layui.laydate
+            ,$ = layui.jquery
+            ,table = layui.table;
+
+        //日期
+        laydate.render({
+            elem: '#date',range: true
+        });
+        laydate.render({
+            elem: '#date1',range: true
+        });
+        laydate.render({
+            elem: '#date2',range: true
+        });
+        laydate.render({
+            elem: '#date3',range: true
+        });
+      
+        
+
+ 
+        
+        //监听提交
+       $("#subForm").click(function(){ 
+    	 //第一个实例
+           table.render({
+             elem: '#dataTable'
+             ,height: 560
+             ,url: '/searchList1?'+$("#dataForm").serialize() //数据接口
+             ,toolbar: '#toolbarDemo'
+             ,page: true //开启分页
+             ,cols: [[ //表头
+            	 {type: 'checkbox', fixed: 'left'}
+            	 ,{field: 'id', title: 'ID', width:50,  fixed: 'left', sort: true}
+                 ,{field: 'username', title: '用户名', width:100}
+                 ,{field: 'sex', title: '性别', width:60}
+                 ,{field: 'phone', title: '电话️', width:100} 
+                 ,{field: 'mail', title: '邮箱️', width:100} 
+                 ,{field: 'position', title: '面试职位', width: 100, sort: true}
+                 ,{field: 'from', title: '来源渠道', width: 100, sort: true}
+                 ,{field: 'yaoyueDate', title: '邀约时间', width: 110, sort: true}
+                 ,{field: 'isPass0', title: '邀约结果', width: 80, sort: true}
+                 ,{field: 'testDate', title: '面试日期', width: 110, sort: true}
+                 ,{field: 'isPass1', title: '初试结果', width: 100, sort: true}
+                 ,{field: 'reason', title: '初试评价', width: 135, sort: true}
+                 ,{field: 'department', title: '部门', width: 135, sort: true}
+                 ,{field: 'isPass2', title: '复试结果', width: 135, sort: true}
+                 ,{field: 'offerDate', title: 'Offer日期', width: 110, sort: true}
+                 ,{field: 'remark', title: '备注', width: 135}
+                 ,{fixed: 'right', title:'操作', toolbar: '#barDemo', width:60}
+             ]]
+             ,parseData: function(res){ //res 即为原始返回的数据
+           	    return {
+           	        "code": res.code, //解析接口状态
+           	        "msg": res.msg, //解析提示文本
+           	        "count": res.count, //解析数据长度
+           	        "data": res.data //解析数据列表
+           	      };
+              }
+           });
+         //头工具栏事件
+           table.on('toolbar(dataTable)', function(obj){
+             var checkStatus = table.checkStatus(obj.config.id);
+             if(obj.event === 'getCheckData'){
+            	 layer.confirm('⛔️确认要批量删除行选中数据么？', function(index){
+            		 
+            		 
+            		 var data = checkStatus.data;
+                	 var ids='';
+                	 for(var i=0;i<data.length;i++){
+                		 ids+=data[i].id+",";
+                	 }
+                	 $.ajax({
+                		 url:"/delZpUserInfo",
+                		 data:"ids="+ids,
+                		 success:function(msg){
+                			 layer.msg("㊗️恭喜㊗️ 批量删除成功！！！");
+                			 $("#subForm").trigger("click");
+                		 }
+                	 });
+                   });
+            	 
+             }
+           });
+           
+           //监听行工具事件
+           table.on('tool(dataTable)', function(obj){
+             var data = obj.data;
+             console.log(obj)
+             if(obj.event === 'del'){
+               layer.confirm('🚫真的删除['+data.username+']数据么?', function(index){
+            	 $.ajax({
+              		 url:"/delZpUserInfo",
+              		 data:"ids="+data.id,
+              		 success:function(msg){
+              			 layer.msg("🉐恭喜㊙️ 删除成功！！！");
+              			 //obj.del();
+                         layer.close(index);
+              		 }
+              	 });
+                 obj.del();
+                 layer.close(index);
+               });
+             }
+           });
+    	 
+    	 
+    	 
+             
+        });
+
+       
+        
+        
+
+    });
+</script>
+</body>
+</html>
