@@ -932,18 +932,19 @@ public class KqController {
                             String day = leaveInfo.getDay();//请假日期
                             if (leaveInfo.getName().trim().indexOf(name)>=0 && day.indexOf(monthDay) >= 0) {// 匹配到当前排班中请假信息
                                 String type= leaveInfo.getType();
+                                day=day.replace(year+"-","");
                                 remarkAll += day + " 请" +type + leaveInfo.getLongTime() + "小时     ";
                                 leaveTime += leaveInfo.getLongTime();
                                 leaveInfoDesc += monthDay + " 请" + leaveInfo.getType() + leaveInfo.getLongTime() + "小时     ";
                                 isLeave=true;
                                 if (type.indexOf("事")>=0){
-                                    leave1+=leaveTime;
+                                    leave1+=leaveTime/7.5;
                                 }else  if (type.indexOf("病")>=0){
-                                    leave2+=leaveTime;
+                                    leave2+=leaveTime/7.5;
                                 }else  if (type.indexOf("年")>=0){
-                                    leave3+=leaveTime;
+                                    leave3+=leaveTime/7.5;
                                 }else {
-                                    leave4+=leaveTime;
+                                    leave4+=leaveTime/7.5;
                                 }
                             }
                         }
@@ -1113,7 +1114,7 @@ public class KqController {
                     score += t30OutMcount * 3;
                 }
                 if (t60OutMcount > 0) {
-                    jobScoreDesc += "迟到超60分钟" + t60OutMcount + "次【扣" + t30OutMcount * 3 + "分】   ";
+                    jobScoreDesc += "迟到超60分钟" + t60OutMcount + "次【扣" + t60OutMcount * 3 + "分】   ";
                     score += t60OutMcount * 6;
                 }
                 if (zaoTui > 0) {
