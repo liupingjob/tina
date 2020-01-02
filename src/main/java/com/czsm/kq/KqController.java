@@ -911,6 +911,7 @@ public class KqController {
                     String date = year + "-"
                             + (wd.getMonth().trim().length() == 1 ? "0" + wd.getMonth() : wd.getMonth()) + "-"
                             + (wd.getDay().trim().length() == 1 ? "0" + wd.getDay() : wd.getDay());
+                    System.out.println("date:"+date);
                     if (isNotEmpty(user.getInDate()) && user.getInDate().compareTo(date) > 0) {// 有入职日期 并且入职比当前晚
                         continue;
                     }
@@ -933,7 +934,7 @@ public class KqController {
                             if (leaveInfo.getName().trim().indexOf(name)>=0 && day.indexOf(monthDay) >= 0) {// 匹配到当前排班中请假信息
                                 String type= leaveInfo.getType();
                                 day=day.replace(year+"-","");
-                                remarkAll += day + " 请" +type + leaveInfo.getLongTime() + "小时     ";
+                                //remarkAll += day + " 请" +type + leaveInfo.getLongTime() + "小时     ";
                                 leaveTime += leaveInfo.getLongTime();
                                 leaveInfoDesc += monthDay + " 请" + leaveInfo.getType() + leaveInfo.getLongTime() + "小时     ";
                                 isLeave=true;
@@ -999,8 +1000,8 @@ public class KqController {
                         continue;// 不继续统计
                     }
                     if (isDingDing) {
-                        remarkAll += dateStr + "存在钉钉外出卡记录 [考勤打卡上班时间：" + (isEmpty(inTime) ? "未打卡" : inTime) + "  下班时间："
-                                + (isEmpty(goTime) ? "未打卡" : goTime) + "]【需人工匹配】       ";
+                       // remarkAll += dateStr + "存在钉钉外出卡记录 [考勤打卡上班时间：" + (isEmpty(inTime) ? "未打卡" : inTime) + "  下班时间："
+                        //        + (isEmpty(goTime) ? "未打卡" : goTime) + "]【需人工匹配】       ";
                         excp += dateStr + "存在钉钉外出卡记录 [考勤打卡上班时间：" + (isEmpty(inTime) ? "未打卡" : inTime) + "  下班时间："
                                 + (isEmpty(goTime) ? "未打卡" : goTime) + "]【需人工匹配】       ";
                         continue;// 不继续统计
