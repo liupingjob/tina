@@ -911,7 +911,7 @@ public class KqController {
                     String date = year + "-"
                             + (wd.getMonth().trim().length() == 1 ? "0" + wd.getMonth() : wd.getMonth()) + "-"
                             + (wd.getDay().trim().length() == 1 ? "0" + wd.getDay() : wd.getDay());
-                    System.out.println("date:"+date);
+                    System.out.println("date:" + date);
                     if (isNotEmpty(user.getInDate()) && user.getInDate().compareTo(date) > 0) {// 有入职日期 并且入职比当前晚
                         continue;
                     }
@@ -931,32 +931,31 @@ public class KqController {
                     if (isLeaveC) {// 页面参数如果需要统计请假信息
                         for (LeaveInfo leaveInfo : leaveList) {
                             String day = leaveInfo.getDay();//请假日期
-                            if (leaveInfo.getName().trim().indexOf(name)>=0 && day.indexOf(monthDay) >= 0) {// 匹配到当前排班中请假信息
-                                String type= leaveInfo.getType();
-                                day=day.replace(year+"-","");
+                            if (leaveInfo.getName().trim().indexOf(name) >= 0 && day.indexOf(monthDay) >= 0) {// 匹配到当前排班中请假信息
+                                String type = leaveInfo.getType();
+                                day = day.replace(year + "-", "");
                                 //remarkAll += day + " 请" +type + leaveInfo.getLongTime() + "小时     ";
                                 leaveTime += leaveInfo.getLongTime();
-                                leaveInfoDesc += monthDay + " 请" + leaveInfo.getType() + leaveInfo.getLongTime() + "小时     ";
-                                isLeave=true;
-                                if (type.indexOf("事")>=0){
-                                    leave1+=leaveTime/7.5;
-                                }else  if (type.indexOf("病")>=0){
-                                    leave2+=leaveTime/7.5;
-                                }else  if (type.indexOf("年")>=0){
-                                    leave3+=leaveTime/7.5;
-                                }else {
-                                    leave4+=leaveTime/7.5;
+                                leaveInfoDesc += monthDay + " 请" + leaveInfo.getType() + leaveInfo.getLongTime() / 7.5+ "天     ";
+                                isLeave = true;
+                                if (type.indexOf("事") >= 0) {
+                                    leave1 += leaveTime / 7.5;
+                                } else if (type.indexOf("病") >= 0) {
+                                    leave2 += leaveTime / 7.5;
+                                } else if (type.indexOf("年") >= 0) {
+                                    leave3 += leaveTime / 7.5;
+                                } else {
+                                    leave4 += leaveTime / 7.5;
                                 }
                             }
                         }
                     }
 
 
-
                     if (isDingDingC) {// 页面参数需要统计钉钉打卡信息
                         // 如果没有匹配到请假 再匹配钉钉打卡数据
                         for (DingDingInfo dd : dingDingList) {//
-                            if (dd.getName().trim().indexOf(name)>=0 && dd.getDate().indexOf(date) >= 0) {// 匹配到当前排班中钉钉打卡信息
+                            if (dd.getName().trim().indexOf(name) >= 0 && dd.getDate().indexOf(date) >= 0) {// 匹配到当前排班中钉钉打卡信息
                                 isDingDing = true;
                                 break;
                             }
@@ -968,7 +967,7 @@ public class KqController {
                     for (WorkTime wt : workTimeList) {// 最后每个排班下面匹配考勤打卡数据
                         // System.out.println( "正在统计【" + wt.getUsername() + "】--【" + wt.getDate() +
                         // "】考勤........................");
-                        if (wt.getUsername().trim().indexOf(name)>=0 && wt.getDate().indexOf(date) >= 0) {// 匹配到当前排班日期下的打卡数据
+                        if (wt.getUsername().trim().indexOf(name) >= 0 && wt.getDate().indexOf(date) >= 0) {// 匹配到当前排班日期下的打卡数据
                             inTime = wt.getInTime();
                             goTime = wt.getGoTime();
                             break;// 找到记录则跳出
@@ -993,14 +992,14 @@ public class KqController {
                     }
 
                     if (isLeave) {
-                        remarkAll += "考勤打卡上班时间：" + (isEmpty(inTime) ? "未打卡" : inTime)
-                                + "  下班时间：" + (isEmpty(goTime) ? "未打卡" : goTime) + "]【需人工匹配】       ";
-                        excp += dateStr + "请假" + leaveTime + "天[考勤打卡上班时间：" + (isEmpty(inTime) ? "未打卡" : inTime)
-                                + "  下班时间：" + (isEmpty(goTime) ? "未打卡" : goTime) + "]【需人工匹配】       ";
+                       // remarkAll += "考勤打卡上班时间：" + (isEmpty(inTime) ? "未打卡" : inTime)
+                         //       + "  下班时间：" + (isEmpty(goTime) ? "未打卡" : goTime) + "]【需人工匹配】       ";
+                        //excp += dateStr + "请假" + leaveTime + "天[考勤打卡上班时间：" + (isEmpty(inTime) ? "未打卡" : inTime)
+                        //        + "  下班时间：" + (isEmpty(goTime) ? "未打卡" : goTime) + "]【需人工匹配】       ";
                         continue;// 不继续统计
                     }
                     if (isDingDing) {
-                       // remarkAll += dateStr + "存在钉钉外出卡记录 [考勤打卡上班时间：" + (isEmpty(inTime) ? "未打卡" : inTime) + "  下班时间："
+                        // remarkAll += dateStr + "存在钉钉外出卡记录 [考勤打卡上班时间：" + (isEmpty(inTime) ? "未打卡" : inTime) + "  下班时间："
                         //        + (isEmpty(goTime) ? "未打卡" : goTime) + "]【需人工匹配】       ";
                         excp += dateStr + "存在钉钉外出卡记录 [考勤打卡上班时间：" + (isEmpty(inTime) ? "未打卡" : inTime) + "  下班时间："
                                 + (isEmpty(goTime) ? "未打卡" : goTime) + "]【需人工匹配】       ";
@@ -1077,60 +1076,60 @@ public class KqController {
                     }
 
                 }
-                ct.setIn10MTime(t10Mcount > 0 ? (t10Mcount + " ") : "");
-                ct.setIn15MTime(t15Mcount > 0 ? (t15Mcount + " ") : "");
-                ct.setNoWork(noWork > 0 ? (noWork + "") : "");
-                ct.setNoCard(noCard > 0 ? (noCard + "") : "");
-                ct.setIn30MTime(t30Mcount > 0 ? (t30Mcount + "") : "");
-                ct.setIn30OutTime(t30OutMcount > 0 ? (t30OutMcount + "") : "");
-                ct.setIn60OutTime(t60OutMcount > 0 ? (t60OutMcount + "") : "");
-                ct.setZaoTui(zaoTui > 0 ? (zaoTui + "") : "");
-                ct.setLeave1(leave1 > 0 ? (leave1 + "") : "");
-                ct.setLeave2(leave2 > 0 ? (leave2 + "") : "");
-                ct.setLeave3(leave3 > 0 ? (leave3 + "") : "");
-                ct.setLeave4(leave4 > 0 ? (leave4 + "") : "");
+                ct.setIn10MTime(t10Mcount);
+                ct.setIn15MTime(t15Mcount );
+                ct.setNoWork(noWork);
+                ct.setNoCard(noCard);
+                ct.setIn30MTime(t30Mcount);
+                ct.setIn30OutTime(t30OutMcount);
+                ct.setIn60OutTime(t60OutMcount);
+                ct.setZaoTui(zaoTui);
+                ct.setLeave1(leave1);
+                ct.setLeave2(leave2);
+                ct.setLeave3(leave3);
+                ct.setLeave4(leave4);
                 ct.setHasException(excp);
 
                 double score = 0;// ((t10Mcount - 2) + t15Mcount) * 1 + t30Mcount * 1.5 + t30OutMcount * 3 +
                 // zaoTui * 10 + noWork * 20;
                 if (t10Mcount > 2) {
-                    jobScoreDesc += "迟到10分内" + t10Mcount + "次【扣" + (t10Mcount - 2) + "分】    ";
+                    jobScoreDesc += "迟到10分内" + t10Mcount + "次 扣" + (t10Mcount - 2) + "分     ";
                     score += t10Mcount - 2;
 
                 } else if (t10Mcount > 0) {
-                    jobScoreDesc += "迟到10分内" + t10Mcount + "次【不扣分】    ";
+                    jobScoreDesc += "迟到10分内" + t10Mcount + "次 不扣分     ";
                     //score += t10Mcount;
 
                 }
                 if (t15Mcount > 0) {
-                    jobScoreDesc += "迟到15分内" + t15Mcount + "次【扣" + t15Mcount + "分】    ";
+                    jobScoreDesc += "迟到15分内" + t15Mcount + "次 扣" + t15Mcount + "分     ";
                     score += t15Mcount;
                 }
                 if (t30Mcount > 0) {
-                    jobScoreDesc += "迟到30分内" + t30Mcount + "次【扣" + t30Mcount * 1.5 + "分】   ";
+                    jobScoreDesc += "迟到30分内" + t30Mcount + "次 扣" + t30Mcount * 1.5 + "分    ";
                     score += t30Mcount * 1.5;
                 }
                 if (t30OutMcount > 0) {
-                    jobScoreDesc += "迟到超30分钟" + t30OutMcount + "次【扣" + t30OutMcount * 3 + "分】    ";
+                    jobScoreDesc += "迟到超30分钟" + t30OutMcount + "次 扣" + t30OutMcount * 3 + "分     ";
                     score += t30OutMcount * 3;
                 }
                 if (t60OutMcount > 0) {
-                    jobScoreDesc += "迟到超60分钟" + t60OutMcount + "次【扣" + t60OutMcount * 3 + "分】   ";
+                    jobScoreDesc += "迟到超60分钟" + t60OutMcount + "次 扣" + t60OutMcount * 3 + "分    ";
                     score += t60OutMcount * 6;
                 }
                 if (zaoTui > 0) {
-                    jobScoreDesc += "早退" + zaoTui + "次【扣" + zaoTui * 10 + "分】    ";
+                    jobScoreDesc += "早退" + zaoTui + "次 扣" + zaoTui * 10 + "分     ";
                     score += zaoTui * 10;
                 }
                 if (noWork > 0) {
-                    jobScoreDesc += "旷工" + noWork + "次【扣" + noWork * 20 + "分】    ";
+                    jobScoreDesc += "旷工" + noWork + "次 扣" + noWork * 20 + "分   ";
                     score += noWork * 20;
                 }
                 if (noCard > 0) {
                     if (noCard > 2) {
-                        jobScoreDesc += "未打卡" + noCard + "次【扣" + (noCard - 2) + "分】    ";
+                        jobScoreDesc += "未打卡" + noCard + "次 扣" + (noCard - 2) + "分    ";
                     } else {
-                        jobScoreDesc += "未打卡" + noCard + "次【不扣分】    ";
+                        jobScoreDesc += "未打卡" + noCard + "次 不扣分    ";
 
                     }
                     score += noCard > 2 ? noCard - 2 : 0;
@@ -1139,7 +1138,7 @@ public class KqController {
                 if (isEmpty(jobScoreDesc) && isEmpty(leaveInfoDesc) && noCard == 0 && t10Mcount == 0) {// 没有请假 没有扣绩效
                     ct.setIsAllTime("是");// 全勤
                 }
-                ct.setJobScore(score > 0 ? (score + "分") : "");
+                ct.setJobScore(score);
                 ct.setJobScoreDesc(jobScoreDesc);
                 ct.setRemarkAll(remarkAll);
                 ct.setLeaveRemark(leaveInfoDesc);
@@ -1252,7 +1251,23 @@ public class KqController {
                 if (k == 0) {
                     value = j + 1;
                 }
-                cellData.setCellValue(value == null ? "" : value + "");
+                if(value instanceof String) {
+                    cellData.setCellValue(value == null ? "" : value + "");
+                }else if(value instanceof Double){
+                    if((Double) value == 0){
+                        cellData.setCellValue("");
+
+                    }else {
+                        cellData.setCellValue((Double) value);
+                    }
+                }else {
+                    if (value==null||(int) value == 0){
+                        cellData.setCellValue("");
+                    }else {
+                        System.out.println(value);
+                        cellData.setCellValue((int) value);
+                    }
+                }
                 cellData.setCellStyle(styleData);
             }
         }
